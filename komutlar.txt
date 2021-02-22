@@ -1,0 +1,21 @@
+python pacman.py -l tinyMaze -p SearchAgent -a fn=goa
+python pacman.py -l tinyMaze -p SearchAgent
+python pacman.py -l mediumMaze -p SearchAgent
+python pacman.py -l bigMaze -z .5 -p SearchAgent
+python pacman.py -l mediumMaze -p SearchAgent -a fn=goa
+python pacman.py -l bigMaze -p SearchAgent -a fn=goa -z .5
+python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
+python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+python pacman.py -l mediumMaze -z .5 -p SearchAgent -a fn=astar,heuristic=euclideanHeuristic
+python pacman.py -l mediumCorners -p SearchAgent -a fn=goa,prob=CornersProblem
+python pacman.py -l testSearch -p AStarFoodSearchAgent
+python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5
+python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5
+
+
+Not: Programın denemesini yaparken kullanılabilecek komutlardan bazıları burada gördüklerinizdir.
+DOA -> Derinlik Öncelikli Arama
+GOA -> Genişlik Öncelikli Arama
+DMA -> Düşük Maliyetli Arama
+astar -> A* Arama
+Komutlar Python 2.7 üzerinde terminalden çalıştırılmalıdır. Run denerek çalıştırılırsa klasik Pacman oyunu oynanabilir.
